@@ -1,0 +1,97 @@
+/* Write your code here. */
+.app-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.image {
+  width: 100%;
+  height: 400px;
+  order: 1;
+}
+.letters-calculator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 90%;
+}
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #ffffff;
+}
+.paragraph {
+  text-align: center;
+  font-size: 19px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #ffffff;
+}
+.text-element {
+  border-color: #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 22px;
+  font-family: 'Roboto';
+  outline: none;
+  width: 250px;
+  border-style: solid;
+  border-width: 2px;
+  height: 38px;
+  margin-bottom: 20px;
+}
+.calculator-text-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  width: 250px;
+  height: 75px;
+  background-color: #ffffff;
+  color: #219a6f;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-align: center;
+  border-radius: 12px;
+  border-width: 0px;
+  outline: none;
+  align-self: center;
+  padding-top: 28px;
+}
+@media screen and (min-width: 993px) {
+  .letters-calculator-container {
+    flex-direction: row;
+  }
+  .heading {
+    text-align: left;
+    font-size: 38px;
+  }
+  .image {
+    height: 700px;
+  }
+  .text-element {
+    font-size: 26px;
+    width: 90%;
+  }
+  .calculator-text-button-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
